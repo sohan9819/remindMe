@@ -10,6 +10,7 @@ import {
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Separator } from '@/components/ui/separator';
+import { Toaster } from '@/components/ui/sonner';
 import NavBar from '@/components/custom/NavBar';
 import ThemeProvider from '@/providers/ThemeProvider';
 import { cn } from '@/lib/utils';
@@ -46,6 +47,7 @@ export default function RootLayout({
               <main className='flex grow w-full justify-center dark:bg-neutral-950 items-center'>
                 {children}
               </main>
+              <Toaster />
             </div>
           </ThemeProvider>
         </body>
