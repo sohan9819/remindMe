@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 import {
   ClerkProvider,
+  RedirectToSignIn,
   SignInButton,
   SignUpButton,
   SignedIn,
   SignedOut,
   UserButton,
 } from '@clerk/nextjs';
+import { enUS } from '@clerk/localizations';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Separator } from '@/components/ui/separator';
@@ -36,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider localization={enUS}>
       <html lang='en' className={cn('dark')} style={{ colorScheme: 'dark' }}>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}>

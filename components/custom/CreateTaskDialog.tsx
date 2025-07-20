@@ -70,7 +70,7 @@ const CreateTaskDialog = ({ open, setOpen, collection }: Props) => {
     }
   };
   return (
-    <Dialog open={open}>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className='sm:max-w-[425px]'>
         <DialogHeader className='mb-4'>
           <DialogTitle className='flex gap-2'>

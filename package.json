@@ -13,6 +13,8 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@clerk/elements": "^0.23.43",
+    "@clerk/localizations": "^3.20.1",
     "@clerk/nextjs": "^6.23.1",
     "@hookform/resolvers": "^5.1.1",
     "@prisma/client": "^6.10.1",
