@@ -31,13 +31,12 @@ import CreateTaskDialog from './CreateTaskDialog';
 import TaskCard from './TaskCard';
 
 interface Props {
-  key: number;
   collection: Collection & {
     tasks: Task[];
   };
 }
 
-const CollectionCard = ({ key, collection }: Props) => {
+const CollectionCard = ({ collection }: Props) => {
   const router = useRouter();
   const tasks = collection.tasks;
   const [isOpen, setIsOpen] = useState(true);

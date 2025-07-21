@@ -13,7 +13,6 @@ import { cn } from '@/lib/utils';
 import { CollectionColor, CollectionColors } from '@/lib/constants';
 import { useForm } from 'react-hook-form';
 import { createTaskSchema, createTaskSchemaType } from '@/schema/createTask';
-import { resolve } from 'path';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
   Form,

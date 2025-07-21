@@ -13,7 +13,7 @@ const ThemeSwitcher = () => {
   // To avoid hydration errors
   useEffect(() => {
     setMounted(true);
-  });
+  }, []);
 
   if (!mounted) return null;
 
